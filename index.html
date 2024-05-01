@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo6.png" alt="" height="250" width="250">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">My Projects</a></li>
+                    <li><a href="">My Projects</a></li>
+                    <li><a href="">My Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="intro">
+                <img src="./images/vikas pic.png" alt="">
+                <p>Full Stack Engineer</p>
+                <h1>Hey There, I am <span>Sai Vikas</span> </h1>
+            </div> -->
+            <section id="profile">
+                <div class="section_pic-container">
+                    <img src="./images/vikas pic.png" alt="">
+                </div>
+                <div class="section_text">
+                    <p class="section_text_p1">Hey There,</p>
+                    <h1 class="title">I am <span>Sai Vikas</span></h1>
+                    <p class="section_text_p2">Full Stack Engineer</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color" onclick="window.open('./assets/resume.pdf')">
+                            Download CV/Resume
+                        </button>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/vikas2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Dedicated and detail-oriented Full Stack Developer with 2 years of experience in designing, developing,
+                        and maintaining web applications. Proficient in both front-end and back-end technologies, with a strong
+                        foundation in JavaScript, HTML, CSS, and experience in frameworks such as React.js and Node.js.
+                        Skilled in collaborating with cross-functional teams to deliver high-quality solutions that meet client
+                        needs and exceed expectations.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C,Java, Python</li>
+                            <li><span>Web Frameworks</span><br>React JS</li>
+                            <li><span>Databases</span><br>Mongo DB, PostgreSQL</li>
+                            <li><span>Cloud</span><br>Azure</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Capgemini July 2021- July 2023</span><br>C,Java, Python</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Lambton College August 2023-May 2025</span><br>C,Java, Python</li>
+                            <li><span>Web Frameworks</span><br>React JS</li>
+                            <li><span>Databases</span><br>Mongo DB, PostgreSQL</li>
+                            <li><span>Cloud</span><br>Azure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+        }
+    </script>
+</body>
+
+
+</html>
